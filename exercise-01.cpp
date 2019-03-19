@@ -191,13 +191,16 @@ void traversal(List First)
     }
     else
     {
+        int i=1;
+
         pBantu=First;
-        cout<<"Nama\t\t\t Bidang\t\t Gaji" <<endl;
+        cout<<"No\t Nama\t\t\t Bidang\t\t Gaji" <<endl;
         cout<<"=======================================================" <<endl;
         do
         {
-            cout<<pBantu->nama <<"\t\t" <<pBantu->bidang <<"\t\t" <<pBantu->gaji <<endl;
+            cout<<i <<"\t"<<pBantu->nama <<"\t\t" <<pBantu->bidang <<"\t\t" <<pBantu->gaji <<endl;
             pBantu=pBantu->next;
+            i++;
         }
         while(pBantu!=NULL);
     }
